@@ -75,7 +75,7 @@
         }
         
         .wax-seal::after {
-            content: '♥';
+            content: '\u2665';
             font-size: 28px;
             color: rgba(255,220,220,0.9);
             text-shadow: 0 1px 2px rgba(0,0,0,0.3);
@@ -257,6 +257,53 @@
                 opacity: 0;
             }
         }
+        
+        @media (max-width: 600px) {
+            .letter {
+                padding: 35px 28px;
+            }
+            
+            .greeting h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                font-size: 1em;
+                line-height: 1.9;
+            }
+            
+            .wax-seal {
+                width: 55px;
+                height: 55px;
+                top: -22px;
+                right: 25px;
+            }
+            
+            .wax-seal::after {
+                font-size: 22px;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="floating-petals" id="petals"></div>
+    
+    <div class="envelope">
+        <div class="letter">
+            <div class="wax-seal"></div>
+            <div class="corner-flourish top-left"></div>
+            <div class="corner-flourish top-right"></div>
+            <div class="corner-flourish bottom-left"></div>
+            <div class="corner-flourish bottom-right"></div>
+            
+            <div class="date">Ika-23 ng iyong pagsilang</div>
+            
+            <div class="greeting">
+                <h1>Para sa Aking Minamahal</h1>
+                <div class="subtitle">My Dearest Sweet Little Bunny</div>
+            </div>
+            
+            <div class="content">
+                <p>Sa araw na ito, habang binabati kita ng masayang kaarawan, hayaan mong ibuhos ko ang lahat ng nararamdaman ng puso ko para sa'yo.</p>
+                
+                <p>Alam mo ba kung gaano ako ka-proud sa'yo? Ikaw, mabait, matulungin, masipag, matyaga, pursigido sa buhay at pag-aaral. Consistent ka, mapagmahal, <span class="highlight">soft sa'kin</span>, maalaga, at mahinhin. Nakita ko kung paano ka magpakatatag kahit ilang beses mong sinabi na <em>"suko na ako"</em>, sa buhay, sa pag-aaral, sa pinansyal, sa family, sa kaibigan, minsan kahit sa sarili mo. Nahihirapan ka, nagkakasakit, pero <span class="highlight">matatag ka</span>. Kaya mo mag-isa kahit wala ako, kahit marami kang pinagdaanan noon at hanggang ngayon, binibigyan ka pa rin ng pagsubok ng Panginoon. At kah
